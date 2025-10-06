@@ -1,0 +1,48 @@
+<script type='text/javascript'>
+$(function() {
+  Dashing.widget_base_dimensions = [300, 300]
+  Dashing.numColumns = 3
+});
+</script>
+
+<% content_for :title do %>Project dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="project_title_1" data-view="Text" data-title="Defects" style="background-color:#444444"></div>
+	</li>
+
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="project_subsystem_a" data-view="Number" data-title="Subsystem A" onclick='window.open("https://en.wikipedia.org/wiki/System#Subsystem", "_blank")' data-moreinfo="Reported defects"></div>
+	</li>
+
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="project_subsystem_b" data-view="Number" data-title="Subsystem B" onclick='window.open("https://en.wikipedia.org/wiki/System#Subsystem", "_blank")' data-moreinfo="Reported defects"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="project_title_2" data-view="Text" data-title="Test progress" style="background-color:#444444"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="project_progress_ft" data-view="Meter" data-title="Function test" data-height="150" data-width="150" data-min="0" data-max="100" data-suffix="%" style="background-color:#2266aa"></div>
+    </li>
+
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="project_progress_st" data-view="Meter" data-title="System test" data-height="150" data-width="150" data-min="0" data-max="100" data-suffix="%" style="background-color:#884477"></div>
+    </li>
+
+    <li data-row="3" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="project_title_3" data-view="Text" data-title="Test results" style="background-color:#444444"></div>
+    </li>
+
+    <li data-row="3" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="project_results_ft" data-view="List" data-unordered="true" data-title="Function test" style="background-color:#2266aa"</div>
+    </li>
+
+    <li data-row="3" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="project_results_st" data-view="List" data-unordered="true" data-title="System test" style="background-color:#884477"></div>
+    </li>
+
+  </ul>
+</div>
