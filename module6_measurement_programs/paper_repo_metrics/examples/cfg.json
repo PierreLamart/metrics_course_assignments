@@ -1,0 +1,6 @@
+{
+  "nodes":{"entry":"entry","decision":"binary_decision","yes":"statement","no":"statement","exit":"exit"},
+  "edges":[["entry","decision"],["decision","yes","true"],["decision","no","false"],["yes","exit"],["no","exit"]],
+  "entry":"entry",
+  "exits":["exit"]
+}

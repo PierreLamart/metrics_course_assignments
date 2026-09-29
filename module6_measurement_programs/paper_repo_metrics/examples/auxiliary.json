@@ -1,0 +1,23 @@
+{
+  "classification": {"y_true":[0,0,1,1], "y_pred":[0,1,1,1], "probabilities":[0.1,0.6,0.8,0.9], "auc_tie_credit":0.0},
+  "agreement": {"rater_a":["Early","Growing","Mature","Mature"], "rater_b":["Early","Mature","Mature","Mature"]},
+  "detection_ap": {
+    "0.50":{"oil_palm":0.90}, "0.55":{"oil_palm":0.88}, "0.60":{"oil_palm":0.85},
+    "0.65":{"oil_palm":0.80}, "0.70":{"oil_palm":0.75}, "0.75":{"oil_palm":0.70},
+    "0.80":{"oil_palm":0.60}, "0.85":{"oil_palm":0.50}, "0.90":{"oil_palm":0.40}, "0.95":{"oil_palm":0.20}
+  },
+  "runtime":[{"images":1,"elapsed_ms":16.0,"gpu_memory_mb":42.0}, {"images":1,"elapsed_ms":18.0,"gpu_memory_mb":44.0}],
+  "test_execution": {
+    "fault_universe":["F1","F2"],
+    "tests":[{"id":"T1","duration_ms":10,"faults":["F1"]}, {"id":"T2","duration_ms":20,"faults":["F2"]},
+             {"id":"T3","duration_ms":15,"faults":[]}, {"id":"T4","duration_ms":10,"faults":["F1"]}]
+  },
+  "risk":{"component_count":5,"components":[
+    {"id":"navigation","sr":73.7,"sa":66.1,"se":77.9,"business_impact":47.9,"highest_risk_file_ids":["a.py","b.py"]}
+  ]},
+  "ai_labels":["AI","Human","Human","Unknown"],
+  "citation_ids":["canonical-work-1","canonical-work-2","canonical-work-2"],
+  "hybrid":{"raw_complexities":[2,3], "adjusted_complexities":[4,6]},
+  "io_format_ids":["format-statement-10","format-statement-20"],
+  "smell_instances":[{"smell":"LongMethod","entity":"Example.choose"}]
+}

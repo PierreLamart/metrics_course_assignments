@@ -1,0 +1,1415 @@
+{
+  "version": "1.0",
+  "notes": "IDs with a paper suffix preserve genuinely different paper definitions. Measurement conventions are not new claims about the source papers.",
+  "metrics": [
+    {
+      "id": "loc",
+      "aliases": [
+        "LOC",
+        "Lines of Code"
+      ],
+      "papers": [
+        "P1",
+        "P2",
+        "P8",
+        "P9"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "total_lines",
+      "aliases": [
+        "NL",
+        "LINES"
+      ],
+      "papers": [
+        "P2",
+        "P8"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "blank_lines",
+      "aliases": [
+        "BLOC",
+        "loBlank"
+      ],
+      "papers": [
+        "P2",
+        "P8"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "comment_lines",
+      "aliases": [
+        "NCL",
+        "loComment"
+      ],
+      "papers": [
+        "P2",
+        "P8"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "lines_without_comment_only",
+      "aliases": [
+        "LN-CM"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "comment_to_code_ratio",
+      "aliases": [
+        "RCTC",
+        "CCR"
+      ],
+      "papers": [
+        "P2",
+        "P9"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "comment_percentage",
+      "aliases": [
+        "CP"
+      ],
+      "papers": [
+        "P9"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "statements",
+      "aliases": [
+        "NOS",
+        "CountStmt"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "declarative_statements",
+      "aliases": [
+        "NDS",
+        "CountStmtDecl"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "executable_statements",
+      "aliases": [
+        "NExS",
+        "CountStmtExe",
+        "STMTS"
+      ],
+      "papers": [
+        "P2",
+        "P8"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "unit_count",
+      "aliases": [
+        "UNITS"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "statements_per_unit",
+      "aliases": [
+        "STMT/Unit"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "file_count",
+      "aliases": [
+        "NOF",
+        "#Files"
+      ],
+      "papers": [
+        "P2",
+        "P9"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "class_count",
+      "aliases": [
+        "NOC [P2 only]",
+        "#Classes"
+      ],
+      "papers": [
+        "P1",
+        "P2",
+        "P6",
+        "P9"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "method_count",
+      "aliases": [
+        "NOM",
+        "CountDeclMethod",
+        "NumOps"
+      ],
+      "papers": [
+        "P1",
+        "P2",
+        "P6",
+        "P7"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "default_methods",
+      "aliases": [
+        "NDM",
+        "CountDeclMethodDefault"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "private_methods",
+      "aliases": [
+        "NPriM"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "protected_methods",
+      "aliases": [
+        "NProM"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "public_methods",
+      "aliases": [
+        "NPM",
+        "NumPubOps"
+      ],
+      "papers": [
+        "P2",
+        "P7"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "instance_methods",
+      "aliases": [
+        "NIM"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "instance_variables",
+      "aliases": [
+        "NIV"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "methods_per_class",
+      "aliases": [
+        "methods_per_class"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "attribute_count",
+      "aliases": [
+        "NumAttr"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "getters",
+      "aliases": [
+        "Getters"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "setters",
+      "aliases": [
+        "Setters"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source AST/lexer",
+      "status": "implemented",
+      "notes": "Aliases have measurement-policy differences; see MEASUREMENT_POLICIES.md. Python visibility is unavailable."
+    },
+    {
+      "id": "distinct_operators",
+      "aliases": [
+        "n1",
+        "uniqOp"
+      ],
+      "papers": [
+        "P8",
+        "P9"
+      ],
+      "input": "source lexer",
+      "status": "implemented",
+      "notes": "lexical-v1 convention is explicit; no claim of extractor identity."
+    },
+    {
+      "id": "distinct_operands",
+      "aliases": [
+        "n2",
+        "uniqOpnd"
+      ],
+      "papers": [
+        "P8",
+        "P9"
+      ],
+      "input": "source lexer",
+      "status": "implemented",
+      "notes": "lexical-v1 convention is explicit; no claim of extractor identity."
+    },
+    {
+      "id": "total_operators",
+      "aliases": [
+        "N1",
+        "totalOp"
+      ],
+      "papers": [
+        "P8",
+        "P9"
+      ],
+      "input": "source lexer",
+      "status": "implemented",
+      "notes": "lexical-v1 convention is explicit; no claim of extractor identity."
+    },
+    {
+      "id": "total_operands",
+      "aliases": [
+        "N2",
+        "totalOpnd"
+      ],
+      "papers": [
+        "P8",
+        "P9"
+      ],
+      "input": "source lexer",
+      "status": "implemented",
+      "notes": "lexical-v1 convention is explicit; no claim of extractor identity."
+    },
+    {
+      "id": "halstead_length",
+      "aliases": [
+        "N"
+      ],
+      "papers": [
+        "P8",
+        "P9"
+      ],
+      "input": "source lexer",
+      "status": "implemented",
+      "notes": "lexical-v1 convention is explicit; no claim of extractor identity."
+    },
+    {
+      "id": "halstead_vocabulary",
+      "aliases": [
+        "n"
+      ],
+      "papers": [
+        "P8",
+        "P9"
+      ],
+      "input": "source lexer",
+      "status": "implemented",
+      "notes": "lexical-v1 convention is explicit; no claim of extractor identity."
+    },
+    {
+      "id": "halstead_volume",
+      "aliases": [
+        "HV",
+        "V"
+      ],
+      "papers": [
+        "P8",
+        "P9"
+      ],
+      "input": "source lexer",
+      "status": "implemented",
+      "notes": "lexical-v1 convention is explicit; no claim of extractor identity."
+    },
+    {
+      "id": "dit",
+      "aliases": [
+        "DIT"
+      ],
+      "papers": [
+        "P1",
+        "P2",
+        "P6",
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "noc_children",
+      "aliases": [
+        "NOC [CK]",
+        "NOCh"
+      ],
+      "papers": [
+        "P1",
+        "P2",
+        "P6",
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "immediate_bases",
+      "aliases": [
+        "IFANIN"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "num_descendants",
+      "aliases": [
+        "NumDesc"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "num_ancestors_known",
+      "aliases": [
+        "NumAnc"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "cld",
+      "aliases": [
+        "CLD"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "interfaces_implemented",
+      "aliases": [
+        "IFImpI"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "inherited_operations_known",
+      "aliases": [
+        "OpsInh"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "inherited_attributes_known",
+      "aliases": [
+        "AttInh"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "direct_interface_clients",
+      "aliases": [
+        "NumDirClients"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "indirect_interface_clients",
+      "aliases": [
+        "NumIndClients"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "nesting",
+      "aliases": [
+        "Nesting"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model inheritance graph",
+      "status": "implemented",
+      "notes": "Known/in-scope relationships only. DIT is null when ancestor linkage is incomplete."
+    },
+    {
+      "id": "ec_attr_known",
+      "aliases": [
+        "EC_Attr"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model type references",
+      "status": "implemented",
+      "notes": "Count resolved type occurrences, not unique target types; self-type and return parameters excluded by explicit convention."
+    },
+    {
+      "id": "ic_attr_known",
+      "aliases": [
+        "IC_Attr"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model type references",
+      "status": "implemented",
+      "notes": "Count resolved type occurrences, not unique target types; self-type and return parameters excluded by explicit convention."
+    },
+    {
+      "id": "ec_par_known",
+      "aliases": [
+        "EC_Par"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model type references",
+      "status": "implemented",
+      "notes": "Count resolved type occurrences, not unique target types; self-type and return parameters excluded by explicit convention."
+    },
+    {
+      "id": "ic_par_known",
+      "aliases": [
+        "IC_Par"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "source/model type references",
+      "status": "implemented",
+      "notes": "Count resolved type occurrences, not unique target types; self-type and return parameters excluded by explicit convention."
+    },
+    {
+      "id": "assoc",
+      "aliases": [
+        "Assoc"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "explicit UML/normalized association model",
+      "status": "implemented",
+      "notes": "No association inference from fields. Branch metrics require a supplied scope-branch policy."
+    },
+    {
+      "id": "num_ass_el_ssc",
+      "aliases": [
+        "NumAssEl_ssc"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "explicit UML/normalized association model",
+      "status": "implemented",
+      "notes": "No association inference from fields. Branch metrics require a supplied scope-branch policy."
+    },
+    {
+      "id": "num_ass_el_sb",
+      "aliases": [
+        "NumAssEl_sb"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "explicit UML/normalized association model",
+      "status": "implemented",
+      "notes": "No association inference from fields. Branch metrics require a supplied scope-branch policy."
+    },
+    {
+      "id": "num_ass_el_nsb",
+      "aliases": [
+        "NumAssEl_nsb"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "explicit UML/normalized association model",
+      "status": "implemented",
+      "notes": "No association inference from fields. Branch metrics require a supplied scope-branch policy."
+    },
+    {
+      "id": "cbo_known",
+      "aliases": [
+        "CBO"
+      ],
+      "papers": [
+        "P2",
+        "P6",
+        "P9"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Symmetric resolved type/call coupling; excludes inheritance-only links."
+    },
+    {
+      "id": "rfc_p2_methods_including_inherited_known",
+      "aliases": [
+        "RFC [P2]"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Local plus inherited method population, per P2 wording."
+    },
+    {
+      "id": "rfc_p9_boundary_fanin_plus_fanout_resolved",
+      "aliases": [
+        "RFC [P9]"
+      ],
+      "papers": [
+        "P9"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "P9 sum formula; boundary union-of-methods interpretation is explicitly declared."
+    },
+    {
+      "id": "fanin_resolved",
+      "aliases": [
+        "FANIN"
+      ],
+      "papers": [
+        "P1"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Distinct resolved caller methods; not inheritance IFANIN."
+    },
+    {
+      "id": "fanout_resolved",
+      "aliases": [
+        "FANOUT"
+      ],
+      "papers": [
+        "P1"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Distinct resolved callee methods."
+    },
+    {
+      "id": "lcom_p9_literal",
+      "aliases": [
+        "LCOM [P9 literal]"
+      ],
+      "papers": [
+        "P9"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "(sum(mu)-m)/(a*(1-m)); not the common normalized LCOM3 rewrite."
+    },
+    {
+      "id": "cc",
+      "aliases": [
+        "CC",
+        "V(G)"
+      ],
+      "papers": [
+        "P1",
+        "P8",
+        "P9"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "E-N+2P; source CFG conventions and unsupported constructs are reported."
+    },
+    {
+      "id": "sum_cyclomatic",
+      "aliases": [
+        "SumCyclomatic"
+      ],
+      "papers": [
+        "P2"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Sum across callable bodies in the file; missing components keep full sum null."
+    },
+    {
+      "id": "wmc",
+      "aliases": [
+        "WMC"
+      ],
+      "papers": [
+        "P1",
+        "P2",
+        "P6",
+        "P9"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Sum local body complexities; constructor population is configurable."
+    },
+    {
+      "id": "rci",
+      "aliases": [
+        "RCI"
+      ],
+      "papers": [
+        "P1"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Method CC / class mean CC."
+    },
+    {
+      "id": "rcim",
+      "aliases": [
+        "RCIM"
+      ],
+      "papers": [
+        "P1"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "mean(RCI)+k*pstdev(RCI)."
+    },
+    {
+      "id": "ic_resolved",
+      "aliases": [
+        "IC"
+      ],
+      "papers": [
+        "P1"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "CC+log10(fanin+1)+0.5*log10(fanout+1) on resolved call graph."
+    },
+    {
+      "id": "binary_decisions",
+      "aliases": [
+        "CL"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Count binary branch vertices in the chosen CFG."
+    },
+    {
+      "id": "relative_logical_complexity",
+      "aliases": [
+        "cL"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "CL / executable statement count."
+    },
+    {
+      "id": "npath_node_simple",
+      "aliases": [
+        "NPATH [explicit node-simple policy]"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "Bounded node-simple path enumeration or DAG DP; original NPATH loop rules are not specified in the PDF."
+    },
+    {
+      "id": "mi_p9_literal",
+      "aliases": [
+        "MI [P9 literal]"
+      ],
+      "papers": [
+        "P9"
+      ],
+      "input": "source or explicit graph",
+      "status": "implemented",
+      "notes": "171-5.2 ln(HV)-.23 CC-16.2 ln(LOC)+50 sin(sqrt(246*COM))."
+    },
+    {
+      "id": "bytecode_instructions",
+      "aliases": [
+        "bytecode instructions"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "Smali; handler counts also from Python/Java",
+      "status": "implemented",
+      "notes": "Handlers, not protected regions, counted; bytecode no-action convention is explicit. No APK decompilation."
+    },
+    {
+      "id": "bytecode_per_method",
+      "aliases": [
+        "bytecode_per_method"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "Smali; handler counts also from Python/Java",
+      "status": "implemented",
+      "notes": "Handlers, not protected regions, counted; bytecode no-action convention is explicit. No APK decompilation."
+    },
+    {
+      "id": "catch_handlers",
+      "aliases": [
+        "catch"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "Smali; handler counts also from Python/Java",
+      "status": "implemented",
+      "notes": "Handlers, not protected regions, counted; bytecode no-action convention is explicit. No APK decompilation."
+    },
+    {
+      "id": "empty_catch_handlers",
+      "aliases": [
+        "no_action"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "Smali; handler counts also from Python/Java",
+      "status": "implemented",
+      "notes": "Handlers, not protected regions, counted; bytecode no-action convention is explicit. No APK decompilation."
+    },
+    {
+      "id": "network_op",
+      "aliases": [
+        "network_op"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "fileio_op",
+      "aliases": [
+        "fileio_op"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "sqlite_op",
+      "aliases": [
+        "sqlite_op"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "start_activity",
+      "aliases": [
+        "start_activity"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "start_service",
+      "aliases": [
+        "start_service"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "start_intent_for_result",
+      "aliases": [
+        "start_intent_for_result"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "start_activity_result",
+      "aliases": [
+        "start_activity_result"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "log",
+      "aliases": [
+        "log"
+      ],
+      "papers": [
+        "P6"
+      ],
+      "input": "qualified static invocation sites + user API rule registry",
+      "status": "implemented",
+      "notes": "Exact original API mapping is not published. Empty/missing rules are not silently filled."
+    },
+    {
+      "id": "accuracy",
+      "aliases": [
+        "Accuracy"
+      ],
+      "papers": [
+        "P3",
+        "P4",
+        "P7",
+        "P8"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Confusion-matrix correctness."
+    },
+    {
+      "id": "precision",
+      "aliases": [
+        "Precision"
+      ],
+      "papers": [
+        "P3",
+        "P4",
+        "P5",
+        "P7",
+        "P8"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "TP/(TP+FP)."
+    },
+    {
+      "id": "recall",
+      "aliases": [
+        "Recall",
+        "Sensitivity",
+        "TPR"
+      ],
+      "papers": [
+        "P3",
+        "P4",
+        "P5",
+        "P7",
+        "P8"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "TP/(TP+FN)."
+    },
+    {
+      "id": "specificity",
+      "aliases": [
+        "Specificity"
+      ],
+      "papers": [
+        "P7"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "TN/(TN+FP), described in P7 AUC definition."
+    },
+    {
+      "id": "f1",
+      "aliases": [
+        "F1",
+        "F-measure"
+      ],
+      "papers": [
+        "P3",
+        "P4",
+        "P7",
+        "P8"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "2TP/(2TP+FP+FN); explicit zero policy."
+    },
+    {
+      "id": "mcc",
+      "aliases": [
+        "MCC"
+      ],
+      "papers": [
+        "P3"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Matthews correlation coefficient."
+    },
+    {
+      "id": "cohens_kappa",
+      "aliases": [
+        "Cohen's Kappa"
+      ],
+      "papers": [
+        "P3",
+        "P4"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Observed versus expected agreement."
+    },
+    {
+      "id": "auc",
+      "aliases": [
+        "AUC",
+        "ROC AUC"
+      ],
+      "papers": [
+        "P3",
+        "P7",
+        "P8"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "P3 strict > default; alternate tie credit must be explicit."
+    },
+    {
+      "id": "rmse",
+      "aliases": [
+        "RMSE"
+      ],
+      "papers": [
+        "P3"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Root mean squared probability error."
+    },
+    {
+      "id": "percentage_agreement",
+      "aliases": [
+        "Percent agreement"
+      ],
+      "papers": [
+        "P4"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "100*same labels/n."
+    },
+    {
+      "id": "map_50",
+      "aliases": [
+        "mAP@50"
+      ],
+      "papers": [
+        "P5"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Average supplied AP by class at IoU .50."
+    },
+    {
+      "id": "map_50_95",
+      "aliases": [
+        "mAP@50-95"
+      ],
+      "papers": [
+        "P5"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Average supplied AP over classes and ten IoU thresholds."
+    },
+    {
+      "id": "latency_ms_per_image",
+      "aliases": [
+        "Latency"
+      ],
+      "papers": [
+        "P5"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Measured elapsed milliseconds / images; optional explicit benchmark API."
+    },
+    {
+      "id": "gpu_memory_mb",
+      "aliases": [
+        "GPU memory usage"
+      ],
+      "papers": [
+        "P5"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Supplied device telemetry; report observed mean/max, not CPU RSS."
+    },
+    {
+      "id": "test_execution_time_ms",
+      "aliases": [
+        "Test execution time"
+      ],
+      "papers": [
+        "P10"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Sum supplied test durations."
+    },
+    {
+      "id": "suite_percentage_to_cover_all_faults",
+      "aliases": [
+        "% test suite to cover all faults"
+      ],
+      "papers": [
+        "P10"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Smallest fault-covering prefix / complete ordered suite."
+    },
+    {
+      "id": "software_health",
+      "aliases": [
+        "Software Quality",
+        "Software Health"
+      ],
+      "papers": [
+        "P10"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Mean of externally supplied SR, SA, SE."
+    },
+    {
+      "id": "rocr",
+      "aliases": [
+        "ROCR"
+      ],
+      "papers": [
+        "P10"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Weighted deficiency * BI / (100 * components)."
+    },
+    {
+      "id": "highest_risk_file_count",
+      "aliases": [
+        "Files with highest risk"
+      ],
+      "papers": [
+        "P10"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Count externally supplied risky-file IDs; no vendor risk rule invented."
+    },
+    {
+      "id": "ai_ratio",
+      "aliases": [
+        "AI ratio"
+      ],
+      "papers": [
+        "P4"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Externally supplied AI/Human labels; Unknown excluded and counted separately."
+    },
+    {
+      "id": "citation_count",
+      "aliases": [
+        "Citation count"
+      ],
+      "papers": [
+        "P4"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Count supplied canonical citing-work identifiers."
+    },
+    {
+      "id": "fomts",
+      "aliases": [
+        "FOMTS"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Count externally supplied I/O format construct IDs; no Fortran frontend."
+    },
+    {
+      "id": "new1",
+      "aliases": [
+        "NEW_1"
+      ],
+      "papers": [
+        "P8"
+      ],
+      "input": "explicit auxiliary observations",
+      "status": "implemented",
+      "notes": "Only equation evaluation from supplied raw/adjusted complexities; no invented scope reconstruction."
+    }
+  ],
+  "not_automatically_measured": [
+    {
+      "metrics": [
+        "KNOT1",
+        "KNOT2"
+      ],
+      "reason": "No formal knot algorithm/ordering is defined in the supplied paper."
+    },
+    {
+      "metrics": [
+        "Adjusted Complexity",
+        "SCOPE graph reconstruction",
+        "NEW_1 graph extraction"
+      ],
+      "reason": "Scope membership and global/local parameter definitions are insufficient. Raw E_j and NEW_1 arithmetic are implemented for supplied inputs."
+    },
+    {
+      "metrics": [
+        "ev(g)",
+        "iv(g)",
+        "Halstead L",
+        "Halstead D",
+        "Halstead I",
+        "Halstead E",
+        "Halstead B",
+        "Halstead T",
+        "branchCount",
+        "potential volume",
+        "estimated program length"
+      ],
+      "reason": "Named or ambiguously labeled dataset fields; formulas/extractor specification are absent. B is NOT automatically treated as observed bug count."
+    },
+    {
+      "metrics": [
+        "PPIV",
+        "APD",
+        "AndroMetric unnamed columns"
+      ],
+      "reason": "Only names/representative columns are supplied; exact definitions/schema are not reconstructed."
+    },
+    {
+      "metrics": [
+        "FAIRness sub-principle scores",
+        "RSEMM best-practice score",
+        "community activity score",
+        "CI integration score",
+        "documentation coverage score",
+        "development history score",
+        "issue management score",
+        "licensing score",
+        "unit testing score",
+        "overall maturity band",
+        "citation velocity",
+        "h-index-style measure"
+      ],
+      "reason": "Scoring rules/thresholds/measurement windows are incomplete. No substitute Git heuristics are presented as these scores."
+    },
+    {
+      "metrics": [
+        "SR",
+        "SA",
+        "SE",
+        "Business Impact"
+      ],
+      "reason": "Vendor/business inputs must be supplied. Health and ROCR arithmetic are implemented."
+    },
+    {
+      "metrics": [
+        "AP from raw bounding boxes"
+      ],
+      "reason": "P5 does not specify matching/interpolation/confidence rules. Supply per-class AP at each IoU threshold."
+    },
+    {
+      "metrics": [
+        "ERV",
+        "UIS",
+        "Average Unit Size",
+        "NAC",
+        "NTI",
+        "INC",
+        "C3",
+        "NRCI"
+      ],
+      "reason": "Candidate names in P9, without sufficient operational definitions in its implementation table."
+    },
+    {
+      "metrics": [
+        "Original-tool LCOM for P1/P2/P6",
+        "Exact NASA locCodeAndComment"
+      ],
+      "reason": "Variants/extractor conventions unspecified; do not substitute a different metric silently."
+    }
+  ]
+}

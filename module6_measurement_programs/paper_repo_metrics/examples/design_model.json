@@ -1,0 +1,15 @@
+{
+  "scope_branch_policy": "prefix_comparable",
+  "classes": [
+    {"id":"I", "name":"Readable", "kind":"interface", "scope":["demo"],
+     "operations":[{"name":"getValue", "visibility":"public", "parameters":[]}]},
+    {"id":"B", "name":"Base", "kind":"class", "scope":["demo"],
+     "attributes":[{"name":"value", "type":"int", "visibility":"protected", "static":false}],
+     "operations":[{"name":"getValue", "visibility":"public", "parameters":[]}]},
+    {"id":"A", "name":"Example", "kind":"class", "scope":["demo"], "parents":["B"], "interfaces":["I"],
+     "attributes":[{"name":"peer", "type":"B", "visibility":"private", "static":false}],
+     "operations":[{"name":"setPeer", "visibility":"public", "parameters":[{"name":"peer", "type":"B"}]},
+                   {"name":"hasPeer", "visibility":"public", "parameters":[]}]}
+  ],
+  "associations":[["A","B"]]
+}

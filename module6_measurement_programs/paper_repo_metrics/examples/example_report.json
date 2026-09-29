@@ -1,0 +1,2884 @@
+{
+  "schema_version": "1.0",
+  "tool_version": "1.0.0",
+  "repository": {
+    "commit": "b2f5ec0a4c10272e2fd18585a42632095dc7d6aa",
+    "measurement_source": "working_tree",
+    "working_tree_dirty": false,
+    "include_untracked": false,
+    "git_version": "git version 2.47.3"
+  },
+  "measurement_policies": {
+    "python_version": "3.13.5",
+    "java_version": "openjdk version \"21.0.11\" 2026-04-21",
+    "source_languages": [
+      "python",
+      "java",
+      "smali"
+    ],
+    "exclude_patterns": [
+      ".git",
+      "node_modules",
+      ".venv",
+      "venv",
+      "__pycache__",
+      "vendor",
+      "build",
+      "dist",
+      "target",
+      ".mypy_cache",
+      ".pytest_cache"
+    ],
+    "include_explicit_constructors_in_source_method_metrics": false,
+    "k_rcim": 2.0,
+    "hierarchy_root_depth": 0,
+    "implicit_root_object_excluded": true,
+    "line_policy": "physical nonblank code-bearing lines; comments and mixed lines counted separately; Python docstrings are literals",
+    "halstead_policy": "lexical-v1; see docs/MEASUREMENT_POLICIES.md",
+    "cc_policy": "E-N+2P on reachable normal-flow CFG; short-circuit conditions expanded; unsupported flow -> null",
+    "npath_policy": "node-simple entry-exit paths; NOT asserted identical to original Nejmeh implementation",
+    "lcom_policy": "P9 Table 2 literal: (sum(mu)-m)/(a*(1-m))",
+    "mi_policy": "P9 Table 2 literal: sqrt(246*COM); natural logarithms; no clipping",
+    "default_visibility_policy": "Java/Smali package/default access, NOT Java interface default keyword; unavailable for Python",
+    "association_policy": "No source-level association inference; supply UML/normalized design model",
+    "coupling_policy": "Symmetric union of resolved declared-type uses and calls; inheritance-only edges excluded",
+    "callgraph_policy": "Conservative syntactic static targets; *_resolved counts exclude ambiguous calls; no runtime dispatch claim",
+    "class_count_policy": "Named classes including enums/records; interfaces counted separately",
+    "max_path_steps": 100000,
+    "max_file_bytes": 2000000
+  },
+  "coverage": {
+    "source_candidate_files": 3,
+    "selected_source_files": 3,
+    "excluded_files": 0,
+    "lexically_measured_files": 3,
+    "structurally_measured_files": 3,
+    "full_structural_coverage_of_selected_files": true,
+    "callables_with_bodies": 12,
+    "callables_with_cc": 11,
+    "unresolved_call_sites": 0,
+    "skipped_reason_counts": {}
+  },
+  "project": {
+    "scope": "successfully_measured_subset; inspect coverage before comparing repositories",
+    "file_count": 3,
+    "structurally_measured_file_count": 3,
+    "total_lines": 76,
+    "blank_lines": 11,
+    "loc": 65,
+    "comment_lines": 0,
+    "comment_only_lines": 0,
+    "mixed_code_comment_lines": 0,
+    "lines_without_comment_only": 76,
+    "comment_to_code_ratio": 0.0,
+    "comment_percentage_ratio_of_totals": 0.0,
+    "p9_sum_file_comment_percentages": 0.0,
+    "halstead_combined_token_stream": {
+      "distinct_operators": 29,
+      "distinct_operands": 30,
+      "total_operators": 67,
+      "total_operands": 81,
+      "halstead_length": 148,
+      "halstead_vocabulary": 59,
+      "halstead_volume": 870.6311713055526
+    },
+    "halstead_combined_token_stream_languages": [
+      "python",
+      "java"
+    ],
+    "sum_file_halstead_volumes": 759.53768150225,
+    "class_count": 4,
+    "interface_count": 1,
+    "method_count": 11,
+    "unit_count": 12,
+    "statements": 44,
+    "declarative_statements": 17,
+    "executable_statements": 27,
+    "bytecode_instructions": 7,
+    "methods_per_class": 2.5,
+    "statements_per_unit": 2.25,
+    "sum_cyclomatic": null,
+    "sum_cyclomatic_measured_lower_bound": 19,
+    "bytecode_per_method": 3.5,
+    "class_metric_summaries": {
+      "attribute_count": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 4,
+        "mean": 0.8,
+        "max": 1
+      },
+      "blank_lines": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 5,
+        "mean": 1.0,
+        "max": 3
+      },
+      "bodyless_methods_excluded_from_complexity": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "cbo_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 2,
+        "mean": 0.4,
+        "max": 1
+      },
+      "cld": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "comment_lines": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "comment_only_lines": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "comment_percentage": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "comment_to_code_ratio": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 0.0,
+        "mean": 0.0,
+        "max": 0.0
+      },
+      "default_methods": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "direct_interface_clients": {
+        "measured": 1,
+        "unavailable": 4,
+        "sum": 1,
+        "mean": 1.0,
+        "max": 1
+      },
+      "distinct_operands": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 33,
+        "mean": 8.25,
+        "max": 19
+      },
+      "distinct_operators": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 36,
+        "mean": 9.0,
+        "max": 20
+      },
+      "dit": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "dit_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "ec_attr_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "ec_par_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "getters": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 4,
+        "mean": 0.8,
+        "max": 1
+      },
+      "halstead_length": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 126,
+        "mean": 31.5,
+        "max": 72
+      },
+      "halstead_vocabulary": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 69,
+        "mean": 17.25,
+        "max": 39
+      },
+      "halstead_volume": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 585.3459598157743,
+        "mean": 146.33648995394358,
+        "max": 380.5489597580819
+      },
+      "ic_attr_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "ic_par_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "immediate_bases": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 2,
+        "mean": 0.4,
+        "max": 1
+      },
+      "indirect_interface_clients": {
+        "measured": 1,
+        "unavailable": 4,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "inherited_attributes_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "inherited_operations_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "instance_methods": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 11,
+        "mean": 2.2,
+        "max": 4
+      },
+      "instance_variables": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 4,
+        "mean": 0.8,
+        "max": 1
+      },
+      "interfaces_implemented": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "lcom_p9_literal": {
+        "measured": 3,
+        "unavailable": 2,
+        "sum": 1.6666666666666665,
+        "mean": 0.5555555555555555,
+        "max": 1.0
+      },
+      "lines_without_comment_only": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 62,
+        "mean": 12.4,
+        "max": 22
+      },
+      "loc": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 57,
+        "mean": 11.4,
+        "max": 22
+      },
+      "mean_cc": {
+        "measured": 3,
+        "unavailable": 2,
+        "sum": 4.166666666666667,
+        "mean": 1.388888888888889,
+        "max": 1.6666666666666667
+      },
+      "method_count": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 11,
+        "mean": 2.2,
+        "max": 4
+      },
+      "methods_with_cc": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 9,
+        "mean": 1.8,
+        "max": 3
+      },
+      "mi_p9_literal": {
+        "measured": 3,
+        "unavailable": 2,
+        "sum": 377.41204342933656,
+        "mean": 125.80401447644552,
+        "max": 142.38938490684146
+      },
+      "mixed_code_comment_lines": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "nesting": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "noc_children": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "num_ancestors_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "num_descendants": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 1,
+        "mean": 0.2,
+        "max": 1
+      },
+      "private_methods": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "protected_methods": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 0,
+        "mean": 0.0,
+        "max": 0
+      },
+      "public_methods": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 8,
+        "mean": 2.0,
+        "max": 4
+      },
+      "rcim": {
+        "measured": 3,
+        "unavailable": 2,
+        "sum": 4.798037516565142,
+        "mean": 1.5993458388550472,
+        "max": 2.1313708498984756
+      },
+      "rfc_p2_methods_including_inherited_known": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 12,
+        "mean": 2.4,
+        "max": 5
+      },
+      "rfc_p9_boundary_fanin_plus_fanout_resolved": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 4,
+        "mean": 0.8,
+        "max": 2
+      },
+      "setters": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 2,
+        "mean": 0.4,
+        "max": 1
+      },
+      "total_lines": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 62,
+        "mean": 12.4,
+        "max": 22
+      },
+      "total_operands": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 68,
+        "mean": 17.0,
+        "max": 36
+      },
+      "total_operators": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 58,
+        "mean": 14.5,
+        "max": 36
+      },
+      "wmc": {
+        "measured": 4,
+        "unavailable": 1,
+        "sum": 9,
+        "mean": 2.25,
+        "max": 5
+      },
+      "wmc_measured_lower_bound": {
+        "measured": 5,
+        "unavailable": 0,
+        "sum": 16,
+        "mean": 3.2,
+        "max": 7
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "Example.java",
+      "language": "java",
+      "sha256": "027f750d625b99c8ea8f8a2cdb3364fd78da4efe07e53cdce80d600122ed05ac",
+      "bytes": 753,
+      "encoding": "utf-8-sig",
+      "status": "measured",
+      "metrics": {
+        "total_lines": 33,
+        "blank_lines": 3,
+        "loc": 30,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 33,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 23,
+        "distinct_operands": 20,
+        "total_operators": 45,
+        "total_operands": 43,
+        "halstead_length": 88,
+        "halstead_vocabulary": 43,
+        "halstead_volume": 477.51129841378463,
+        "statements": 27,
+        "declarative_statements": 12,
+        "executable_statements": 15,
+        "class_count": 2,
+        "interface_count": 1,
+        "unit_count": 6,
+        "method_count": 6,
+        "sum_cyclomatic": null,
+        "sum_cyclomatic_measured_lower_bound": 8,
+        "statements_per_unit": 2.5,
+        "catch_handlers": 1,
+        "empty_catch_handlers": 1,
+        "mi_p9_literal": null
+      },
+      "lexical_status": "measured",
+      "structural_status": "measured",
+      "warnings": []
+    },
+    {
+      "path": "Example.smali",
+      "language": "smali",
+      "sha256": "401613aef2df08eea47b5e5ff6360ed348e25e778e152b99cef6f5ee4cc3afdf",
+      "bytes": 422,
+      "encoding": "utf-8-sig",
+      "status": "measured",
+      "metrics": {
+        "total_lines": 20,
+        "blank_lines": 3,
+        "loc": 17,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 20,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "bytecode_instructions": 7,
+        "class_count": 1,
+        "interface_count": 0,
+        "unit_count": 2,
+        "method_count": 2,
+        "sum_cyclomatic": 3,
+        "sum_cyclomatic_measured_lower_bound": 3,
+        "statements_per_unit": null,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "bytecode_per_method": 3.5,
+        "bytecode_method_population_includes_constructors": true,
+        "mi_p9_literal": null
+      },
+      "lexical_status": "measured",
+      "structural_status": "measured",
+      "warnings": []
+    },
+    {
+      "path": "example.py",
+      "language": "python",
+      "sha256": "dd58f0dfa6adce5c1f5dff4abfbd5b91046eda28262e52642b09d40c9f4c6600",
+      "bytes": 508,
+      "encoding": "utf-8",
+      "status": "measured",
+      "metrics": {
+        "total_lines": 23,
+        "blank_lines": 5,
+        "loc": 18,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 23,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 13,
+        "distinct_operands": 13,
+        "total_operators": 22,
+        "total_operands": 38,
+        "halstead_length": 60,
+        "halstead_vocabulary": 26,
+        "halstead_volume": 282.0263830884655,
+        "statements": 17,
+        "declarative_statements": 5,
+        "executable_statements": 12,
+        "class_count": 1,
+        "interface_count": 0,
+        "unit_count": 4,
+        "method_count": 3,
+        "sum_cyclomatic": 8,
+        "sum_cyclomatic_measured_lower_bound": 8,
+        "statements_per_unit": 3.0,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "mi_p9_literal": 92.99757427929337
+      },
+      "lexical_status": "measured",
+      "structural_status": "measured",
+      "warnings": []
+    }
+  ],
+  "classes": [
+    {
+      "id": "smali:demo.SmaliExample@Example.smali",
+      "qname": "demo.SmaliExample",
+      "name": "SmaliExample",
+      "path": "Example.smali",
+      "language": "smali",
+      "module": "demo",
+      "kind": "class",
+      "scope": [
+        "demo"
+      ],
+      "parent_class": null,
+      "bases": [
+        "java.lang.Object"
+      ],
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "value",
+          "type": "I",
+          "visibility": "private",
+          "static": false
+        }
+      ],
+      "method_ids": [
+        "smali:Ldemo/SmaliExample;->getValue()I@Example.smali",
+        "smali:Ldemo/SmaliExample;->ping()V@Example.smali"
+      ],
+      "associations": null,
+      "start_line": 1,
+      "end_line": 20,
+      "metrics": {
+        "total_lines": 20,
+        "blank_lines": 3,
+        "loc": 17,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 20,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "method_count": 2,
+        "attribute_count": 1,
+        "instance_methods": 2,
+        "instance_variables": 1,
+        "public_methods": 2,
+        "private_methods": 0,
+        "protected_methods": 0,
+        "default_methods": 0,
+        "getters": 1,
+        "setters": 0,
+        "immediate_bases": 1,
+        "noc_children": 0,
+        "dit_known": 0,
+        "dit": 0,
+        "num_ancestors_known": 0,
+        "num_descendants": 0,
+        "cld": 0,
+        "interfaces_implemented": 0,
+        "inherited_operations_known": 0,
+        "inherited_attributes_known": 0,
+        "direct_interface_clients": null,
+        "indirect_interface_clients": null,
+        "cbo_known": 0,
+        "ic_attr_known": 0,
+        "ec_attr_known": 0,
+        "ic_par_known": 0,
+        "ec_par_known": 0,
+        "rfc_p2_methods_including_inherited_known": 2,
+        "rfc_p9_boundary_fanin_plus_fanout_resolved": 1,
+        "wmc": 3,
+        "wmc_measured_lower_bound": 3,
+        "methods_with_cc": 2,
+        "bodyless_methods_excluded_from_complexity": 0,
+        "rcim": 1.6666666666666665,
+        "mean_cc": 1.5,
+        "lcom_p9_literal": 1.0,
+        "assoc": null,
+        "num_ass_el_ssc": null,
+        "num_ass_el_sb": null,
+        "num_ass_el_nsb": null,
+        "nesting": 0,
+        "mi_p9_literal": null
+      },
+      "linkage": {
+        "unresolved_bases": [],
+        "unresolved_declared_types": [],
+        "hierarchy_complete_within_declared_scope": true,
+        "hierarchy_cycle_or_dependency_on_cycle": false
+      }
+    },
+    {
+      "id": "python:example.Counter@3",
+      "name": "Counter",
+      "qname": "example.Counter",
+      "path": "example.py",
+      "language": "python",
+      "module": "example",
+      "kind": "class",
+      "scope": [
+        "example"
+      ],
+      "parent_class": null,
+      "bases": [],
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "value",
+          "static": false,
+          "type": "",
+          "visibility": null
+        }
+      ],
+      "method_ids": [
+        "python:example.Counter.__init__@4",
+        "python:example.Counter.get_value@7",
+        "python:example.Counter.set_value@10"
+      ],
+      "associations": null,
+      "visibility": null,
+      "start_line": 3,
+      "end_line": 15,
+      "metrics": {
+        "total_lines": 13,
+        "blank_lines": 2,
+        "loc": 11,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 13,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 9,
+        "distinct_operands": 9,
+        "total_operators": 14,
+        "total_operands": 26,
+        "halstead_length": 40,
+        "halstead_vocabulary": 18,
+        "halstead_volume": 166.7970000576925,
+        "method_count": 3,
+        "attribute_count": 1,
+        "instance_methods": 3,
+        "instance_variables": 1,
+        "public_methods": null,
+        "private_methods": null,
+        "protected_methods": null,
+        "default_methods": null,
+        "getters": 1,
+        "setters": 1,
+        "immediate_bases": 0,
+        "noc_children": 0,
+        "dit_known": 0,
+        "dit": 0,
+        "num_ancestors_known": 0,
+        "num_descendants": 0,
+        "cld": 0,
+        "interfaces_implemented": 0,
+        "inherited_operations_known": 0,
+        "inherited_attributes_known": 0,
+        "direct_interface_clients": null,
+        "indirect_interface_clients": null,
+        "cbo_known": 0,
+        "ic_attr_known": 0,
+        "ec_attr_known": 0,
+        "ic_par_known": 0,
+        "ec_par_known": 0,
+        "rfc_p2_methods_including_inherited_known": 3,
+        "rfc_p9_boundary_fanin_plus_fanout_resolved": 0,
+        "wmc": 5,
+        "wmc_measured_lower_bound": 5,
+        "methods_with_cc": 3,
+        "bodyless_methods_excluded_from_complexity": 0,
+        "rcim": 2.1313708498984756,
+        "mean_cc": 1.6666666666666667,
+        "lcom_p9_literal": -0.0,
+        "assoc": null,
+        "num_ass_el_ssc": null,
+        "num_ass_el_sb": null,
+        "num_ass_el_nsb": null,
+        "nesting": 0,
+        "mi_p9_literal": 104.39685355728054
+      },
+      "linkage": {
+        "unresolved_bases": [],
+        "unresolved_declared_types": [],
+        "hierarchy_complete_within_declared_scope": true,
+        "hierarchy_cycle_or_dependency_on_cycle": false
+      }
+    },
+    {
+      "id": "java:demo.Readable@Example.java:3",
+      "qname": "demo.Readable",
+      "name": "Readable",
+      "path": "Example.java",
+      "language": "java",
+      "kind": "interface",
+      "module": "demo",
+      "scope": [
+        "demo"
+      ],
+      "parent_class": null,
+      "bases": [],
+      "interfaces": [],
+      "attributes": [],
+      "method_ids": [
+        "java:demo.Readable.getValue@Example.java:4:40"
+      ],
+      "associations": null,
+      "visibility": "default",
+      "start_line": 3,
+      "end_line": 5,
+      "metrics": {
+        "total_lines": 3,
+        "blank_lines": 0,
+        "loc": 3,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 3,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 2,
+        "distinct_operands": 2,
+        "total_operators": 2,
+        "total_operands": 2,
+        "halstead_length": 4,
+        "halstead_vocabulary": 4,
+        "halstead_volume": 8.0,
+        "method_count": 1,
+        "attribute_count": 0,
+        "instance_methods": 1,
+        "instance_variables": 0,
+        "public_methods": 1,
+        "private_methods": 0,
+        "protected_methods": 0,
+        "default_methods": 0,
+        "getters": 1,
+        "setters": 0,
+        "immediate_bases": 0,
+        "noc_children": 0,
+        "dit_known": 0,
+        "dit": 0,
+        "num_ancestors_known": 0,
+        "num_descendants": 0,
+        "cld": 0,
+        "interfaces_implemented": 0,
+        "inherited_operations_known": 0,
+        "inherited_attributes_known": 0,
+        "direct_interface_clients": 1,
+        "indirect_interface_clients": 0,
+        "cbo_known": 0,
+        "ic_attr_known": 0,
+        "ec_attr_known": 0,
+        "ic_par_known": 0,
+        "ec_par_known": 0,
+        "rfc_p2_methods_including_inherited_known": 1,
+        "rfc_p9_boundary_fanin_plus_fanout_resolved": 0,
+        "wmc": 0,
+        "wmc_measured_lower_bound": 0,
+        "methods_with_cc": 0,
+        "bodyless_methods_excluded_from_complexity": 1,
+        "rcim": null,
+        "mean_cc": null,
+        "lcom_p9_literal": null,
+        "assoc": null,
+        "num_ass_el_ssc": null,
+        "num_ass_el_sb": null,
+        "num_ass_el_nsb": null,
+        "nesting": 0,
+        "mi_p9_literal": 142.38938490684146
+      },
+      "linkage": {
+        "unresolved_bases": [],
+        "unresolved_declared_types": [],
+        "hierarchy_complete_within_declared_scope": true,
+        "hierarchy_cycle_or_dependency_on_cycle": false
+      }
+    },
+    {
+      "id": "java:demo.Base@Example.java:7",
+      "qname": "demo.Base",
+      "name": "Base",
+      "path": "Example.java",
+      "language": "java",
+      "kind": "class",
+      "module": "demo",
+      "scope": [
+        "demo"
+      ],
+      "parent_class": null,
+      "bases": [],
+      "interfaces": [],
+      "attributes": [
+        {
+          "name": "value",
+          "type": "int",
+          "visibility": "protected",
+          "static": false
+        }
+      ],
+      "method_ids": [
+        "java:demo.Base.getValue@Example.java:9:101"
+      ],
+      "associations": null,
+      "visibility": "default",
+      "start_line": 7,
+      "end_line": 10,
+      "metrics": {
+        "total_lines": 4,
+        "blank_lines": 0,
+        "loc": 4,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 4,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 5,
+        "distinct_operands": 3,
+        "total_operators": 6,
+        "total_operands": 4,
+        "halstead_length": 10,
+        "halstead_vocabulary": 8,
+        "halstead_volume": 30.0,
+        "method_count": 1,
+        "attribute_count": 1,
+        "instance_methods": 1,
+        "instance_variables": 1,
+        "public_methods": 1,
+        "private_methods": 0,
+        "protected_methods": 0,
+        "default_methods": 0,
+        "getters": 1,
+        "setters": 0,
+        "immediate_bases": 0,
+        "noc_children": 1,
+        "dit_known": 0,
+        "dit": 0,
+        "num_ancestors_known": 0,
+        "num_descendants": 1,
+        "cld": 1,
+        "interfaces_implemented": 0,
+        "inherited_operations_known": 0,
+        "inherited_attributes_known": 0,
+        "direct_interface_clients": null,
+        "indirect_interface_clients": null,
+        "cbo_known": 1,
+        "ic_attr_known": 0,
+        "ec_attr_known": 1,
+        "ic_par_known": 0,
+        "ec_par_known": 1,
+        "rfc_p2_methods_including_inherited_known": 1,
+        "rfc_p9_boundary_fanin_plus_fanout_resolved": 2,
+        "wmc": 1,
+        "wmc_measured_lower_bound": 1,
+        "methods_with_cc": 1,
+        "bodyless_methods_excluded_from_complexity": 0,
+        "rcim": 1.0,
+        "mean_cc": 1.0,
+        "lcom_p9_literal": null,
+        "assoc": null,
+        "num_ass_el_ssc": null,
+        "num_ass_el_sb": null,
+        "num_ass_el_nsb": null,
+        "nesting": 0,
+        "mi_p9_literal": 130.62580496521457
+      },
+      "linkage": {
+        "unresolved_bases": [],
+        "unresolved_declared_types": [],
+        "hierarchy_complete_within_declared_scope": true,
+        "hierarchy_cycle_or_dependency_on_cycle": false
+      }
+    },
+    {
+      "id": "java:demo.Example@Example.java:12",
+      "qname": "demo.Example",
+      "name": "Example",
+      "path": "Example.java",
+      "language": "java",
+      "kind": "class",
+      "module": "demo",
+      "scope": [
+        "demo"
+      ],
+      "parent_class": null,
+      "bases": [
+        "Base"
+      ],
+      "interfaces": [
+        "Readable"
+      ],
+      "attributes": [
+        {
+          "name": "peer",
+          "type": "Base",
+          "visibility": "private",
+          "static": false
+        }
+      ],
+      "method_ids": [
+        "java:demo.Example.<init>@Example.java:14:220",
+        "java:demo.Example.setValue@Example.java:15:272",
+        "java:demo.Example.readPeer@Example.java:22:428",
+        "java:demo.Example.choose@Example.java:23:482",
+        "java:demo.Example.unsupportedFlow@Example.java:30:643"
+      ],
+      "associations": null,
+      "visibility": "default",
+      "start_line": 12,
+      "end_line": 33,
+      "metrics": {
+        "total_lines": 22,
+        "blank_lines": 0,
+        "loc": 22,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 22,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 20,
+        "distinct_operands": 19,
+        "total_operators": 36,
+        "total_operands": 36,
+        "halstead_length": 72,
+        "halstead_vocabulary": 39,
+        "halstead_volume": 380.5489597580819,
+        "method_count": 4,
+        "attribute_count": 1,
+        "instance_methods": 4,
+        "instance_variables": 1,
+        "public_methods": 4,
+        "private_methods": 0,
+        "protected_methods": 0,
+        "default_methods": 0,
+        "getters": 0,
+        "setters": 1,
+        "immediate_bases": 1,
+        "noc_children": 0,
+        "dit_known": 1,
+        "dit": 1,
+        "num_ancestors_known": 1,
+        "num_descendants": 0,
+        "cld": 0,
+        "interfaces_implemented": 1,
+        "inherited_operations_known": 1,
+        "inherited_attributes_known": 1,
+        "direct_interface_clients": null,
+        "indirect_interface_clients": null,
+        "cbo_known": 1,
+        "ic_attr_known": 1,
+        "ec_attr_known": 0,
+        "ic_par_known": 1,
+        "ec_par_known": 0,
+        "rfc_p2_methods_including_inherited_known": 5,
+        "rfc_p9_boundary_fanin_plus_fanout_resolved": 1,
+        "wmc": null,
+        "wmc_measured_lower_bound": 7,
+        "methods_with_cc": 3,
+        "bodyless_methods_excluded_from_complexity": 0,
+        "rcim": null,
+        "mean_cc": null,
+        "lcom_p9_literal": 0.6666666666666666,
+        "assoc": null,
+        "num_ass_el_ssc": null,
+        "num_ass_el_sb": null,
+        "num_ass_el_nsb": null,
+        "nesting": 0,
+        "mi_p9_literal": null
+      },
+      "linkage": {
+        "unresolved_bases": [],
+        "unresolved_declared_types": [],
+        "hierarchy_complete_within_declared_scope": true,
+        "hierarchy_cycle_or_dependency_on_cycle": false
+      }
+    }
+  ],
+  "methods": [
+    {
+      "id": "smali:Ldemo/SmaliExample;->getValue()I@Example.smali",
+      "qname": "demo.SmaliExample.getValue",
+      "name": "getValue",
+      "raw_signature": "Ldemo/SmaliExample;->getValue()I",
+      "owner": "smali:demo.SmaliExample@Example.smali",
+      "path": "Example.smali",
+      "language": "smali",
+      "module": "demo",
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "has_body": true,
+      "abstract": false,
+      "calls": [],
+      "field_accesses": [
+        "value"
+      ],
+      "start_line": 6,
+      "end_line": 10,
+      "metrics": {
+        "total_lines": 5,
+        "blank_lines": 0,
+        "loc": 5,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 5,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "bytecode_instructions": 2,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 1,
+        "cfg_edges": 3,
+        "cfg_nodes": 4,
+        "cfg_components": 1,
+        "binary_decisions": 0,
+        "npath_node_simple": 1,
+        "npath_details": {
+          "value": 1,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": null,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 1,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 1.3010299956639813,
+        "ic_resolved_exceeds_10": false,
+        "rci": 0.6666666666666666,
+        "rci_exceeds_rcim": false
+      },
+      "cfg": {
+        "nodes": {
+          "0": "iget",
+          "1": "return",
+          "entry": "entry",
+          "exit": "exit"
+        },
+        "edges": [
+          [
+            "entry",
+            "0",
+            "next"
+          ],
+          [
+            "0",
+            "1",
+            "next"
+          ],
+          [
+            "1",
+            "exit",
+            "next"
+          ]
+        ],
+        "entry": "entry",
+        "exits": [
+          "exit"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "smali:Ldemo/SmaliExample;->ping()V@Example.smali",
+      "qname": "demo.SmaliExample.ping",
+      "name": "ping",
+      "raw_signature": "Ldemo/SmaliExample;->ping()V",
+      "owner": "smali:demo.SmaliExample@Example.smali",
+      "path": "Example.smali",
+      "language": "smali",
+      "module": "demo",
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "has_body": true,
+      "abstract": false,
+      "calls": [
+        {
+          "name": "getValue",
+          "receiver": "demo.SmaliExample",
+          "arity": 0,
+          "line": 14,
+          "raw_target": "Ldemo/SmaliExample;->getValue()I",
+          "kind": "call",
+          "in_handler": false
+        },
+        {
+          "name": "send",
+          "receiver": "java.net.Example",
+          "arity": 0,
+          "line": 17,
+          "raw_target": "Ljava/net/Example;->send()V",
+          "kind": "call",
+          "in_handler": false
+        }
+      ],
+      "field_accesses": [],
+      "start_line": 12,
+      "end_line": 20,
+      "metrics": {
+        "total_lines": 9,
+        "blank_lines": 0,
+        "loc": 9,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 9,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "bytecode_instructions": 5,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 2,
+        "cfg_edges": 7,
+        "cfg_nodes": 7,
+        "cfg_components": 1,
+        "binary_decisions": 1,
+        "npath_node_simple": 2,
+        "npath_details": {
+          "value": 2,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": null,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 2,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 2.2385606273598313,
+        "ic_resolved_exceeds_10": false,
+        "rci": 1.3333333333333333,
+        "rci_exceeds_rcim": false
+      },
+      "cfg": {
+        "nodes": {
+          "0": "invoke-virtual",
+          "1": "move-result",
+          "2": "if-lez",
+          "3": "invoke-static",
+          "4": "return-void",
+          "entry": "entry",
+          "exit": "exit"
+        },
+        "edges": [
+          [
+            "entry",
+            "0",
+            "next"
+          ],
+          [
+            "0",
+            "1",
+            "next"
+          ],
+          [
+            "1",
+            "2",
+            "next"
+          ],
+          [
+            "2",
+            "4",
+            "true"
+          ],
+          [
+            "2",
+            "3",
+            "false"
+          ],
+          [
+            "3",
+            "4",
+            "next"
+          ],
+          [
+            "4",
+            "exit",
+            "next"
+          ]
+        ],
+        "entry": "entry",
+        "exits": [
+          "exit"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "python:example.Counter.__init__@4",
+      "name": "__init__",
+      "qname": "example.Counter.__init__",
+      "owner": "python:example.Counter@3",
+      "path": "example.py",
+      "language": "python",
+      "module": "example",
+      "lexical_parent": null,
+      "visibility": null,
+      "static": false,
+      "constructor": false,
+      "receiver_name": "self",
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "calls": [],
+      "field_accesses": [
+        "value"
+      ],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 4,
+      "end_line": 5,
+      "metrics": {
+        "total_lines": 2,
+        "blank_lines": 0,
+        "loc": 2,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 2,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 2,
+        "distinct_operands": 4,
+        "total_operators": 2,
+        "total_operands": 5,
+        "halstead_length": 7,
+        "halstead_vocabulary": 6,
+        "halstead_volume": 18.094737505048094,
+        "statements": 1,
+        "declarative_statements": 0,
+        "executable_statements": 1,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 1,
+        "cfg_edges": 2,
+        "cfg_nodes": 3,
+        "cfg_components": 1,
+        "binary_decisions": 0,
+        "npath_node_simple": 1,
+        "npath_details": {
+          "value": 1,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.0,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 1.0,
+        "ic_resolved_exceeds_10": false,
+        "rci": 0.6,
+        "rci_exceeds_rcim": false
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "basic",
+          "2": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "2",
+            "1",
+            "next"
+          ]
+        ],
+        "entry": "2",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "python:example.Counter.get_value@7",
+      "name": "get_value",
+      "qname": "example.Counter.get_value",
+      "owner": "python:example.Counter@3",
+      "path": "example.py",
+      "language": "python",
+      "module": "example",
+      "lexical_parent": null,
+      "visibility": null,
+      "static": false,
+      "constructor": false,
+      "receiver_name": "self",
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "calls": [],
+      "field_accesses": [
+        "value"
+      ],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 7,
+      "end_line": 8,
+      "metrics": {
+        "total_lines": 2,
+        "blank_lines": 0,
+        "loc": 2,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 2,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 2,
+        "distinct_operands": 3,
+        "total_operators": 2,
+        "total_operands": 4,
+        "halstead_length": 6,
+        "halstead_vocabulary": 5,
+        "halstead_volume": 13.931568569324174,
+        "statements": 1,
+        "declarative_statements": 0,
+        "executable_statements": 1,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 1,
+        "cfg_edges": 2,
+        "cfg_nodes": 3,
+        "cfg_components": 1,
+        "binary_decisions": 0,
+        "npath_node_simple": 1,
+        "npath_details": {
+          "value": 1,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.0,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 1,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 1.3010299956639813,
+        "ic_resolved_exceeds_10": false,
+        "rci": 0.6,
+        "rci_exceeds_rcim": false
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "return",
+          "2": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "2",
+            "1",
+            "next"
+          ]
+        ],
+        "entry": "2",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "python:example.Counter.set_value@10",
+      "name": "set_value",
+      "qname": "example.Counter.set_value",
+      "owner": "python:example.Counter@3",
+      "path": "example.py",
+      "language": "python",
+      "module": "example",
+      "lexical_parent": null,
+      "visibility": null,
+      "static": false,
+      "constructor": false,
+      "receiver_name": "self",
+      "params": [
+        {
+          "name": "value",
+          "type": "int"
+        }
+      ],
+      "arity_min": 1,
+      "arity_max": 1,
+      "calls": [
+        {
+          "name": "get_value",
+          "receiver": "self",
+          "arity": 0,
+          "line": 15,
+          "in_handler": false,
+          "kind": "call"
+        }
+      ],
+      "field_accesses": [
+        "get_value",
+        "value"
+      ],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 10,
+      "end_line": 15,
+      "metrics": {
+        "total_lines": 6,
+        "blank_lines": 0,
+        "loc": 6,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 6,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 8,
+        "distinct_operands": 7,
+        "total_operators": 9,
+        "total_operands": 16,
+        "halstead_length": 25,
+        "halstead_vocabulary": 15,
+        "halstead_volume": 97.67226489021297,
+        "statements": 4,
+        "declarative_statements": 0,
+        "executable_statements": 4,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 3,
+        "cfg_edges": 8,
+        "cfg_nodes": 7,
+        "cfg_components": 1,
+        "binary_decisions": 2,
+        "npath_node_simple": 3,
+        "npath_details": {
+          "value": 3,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.5,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 1,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 3.1505149978319906,
+        "ic_resolved_exceeds_10": false,
+        "rci": 1.7999999999999998,
+        "rci_exceeds_rcim": false
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "return",
+          "2": "basic",
+          "3": "basic",
+          "4": "binary_decision",
+          "5": "binary_decision",
+          "6": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "2",
+            "1",
+            "next"
+          ],
+          [
+            "3",
+            "1",
+            "next"
+          ],
+          [
+            "4",
+            "2",
+            "true"
+          ],
+          [
+            "4",
+            "3",
+            "false"
+          ],
+          [
+            "5",
+            "4",
+            "true"
+          ],
+          [
+            "5",
+            "3",
+            "false"
+          ],
+          [
+            "6",
+            "5",
+            "next"
+          ]
+        ],
+        "entry": "6",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "python:example.sum_positive@18",
+      "name": "sum_positive",
+      "qname": "example.sum_positive",
+      "owner": null,
+      "path": "example.py",
+      "language": "python",
+      "module": "example",
+      "lexical_parent": null,
+      "visibility": null,
+      "static": false,
+      "constructor": false,
+      "receiver_name": null,
+      "params": [
+        {
+          "name": "values",
+          "type": ""
+        }
+      ],
+      "arity_min": 1,
+      "arity_max": 1,
+      "calls": [],
+      "field_accesses": [],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 18,
+      "end_line": 23,
+      "metrics": {
+        "total_lines": 6,
+        "blank_lines": 0,
+        "loc": 6,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 6,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 8,
+        "distinct_operands": 5,
+        "total_operators": 8,
+        "total_operands": 11,
+        "halstead_length": 19,
+        "halstead_vocabulary": 13,
+        "halstead_volume": 70.30835464468075,
+        "statements": 5,
+        "declarative_statements": 0,
+        "executable_statements": 5,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 3,
+        "cfg_edges": 9,
+        "cfg_nodes": 8,
+        "cfg_components": 1,
+        "binary_decisions": 2,
+        "npath_node_simple": 1,
+        "npath_details": {
+          "value": 1,
+          "exact": true,
+          "algorithm": "node_simple_dfs"
+        },
+        "relative_logical_complexity": 0.4,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 3.0,
+        "ic_resolved_exceeds_10": false,
+        "rci": null
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "return",
+          "2": "loop_header",
+          "3": "basic",
+          "4": "binary_decision",
+          "5": "binary_decision",
+          "6": "basic",
+          "7": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "3",
+            "2",
+            "next"
+          ],
+          [
+            "4",
+            "3",
+            "true"
+          ],
+          [
+            "4",
+            "2",
+            "false"
+          ],
+          [
+            "5",
+            "4",
+            "true"
+          ],
+          [
+            "5",
+            "1",
+            "false"
+          ],
+          [
+            "2",
+            "5",
+            "next"
+          ],
+          [
+            "6",
+            "2",
+            "next"
+          ],
+          [
+            "7",
+            "6",
+            "next"
+          ]
+        ],
+        "entry": "7",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "java:demo.Readable.getValue@Example.java:4:40",
+      "qname": "demo.Readable.getValue",
+      "name": "getValue",
+      "owner": "java:demo.Readable@Example.java:3",
+      "path": "Example.java",
+      "language": "java",
+      "module": "demo",
+      "lexical_parent": null,
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "receiver_name": "this",
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "calls": [],
+      "field_accesses": [],
+      "has_body": false,
+      "abstract": true,
+      "start_line": 4,
+      "end_line": 4,
+      "metrics": {
+        "total_lines": 1,
+        "blank_lines": 0,
+        "loc": 1,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 1,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 1,
+        "distinct_operands": 1,
+        "total_operators": 1,
+        "total_operands": 1,
+        "halstead_length": 2,
+        "halstead_vocabulary": 2,
+        "halstead_volume": 2.0,
+        "statements": 0,
+        "declarative_statements": 0,
+        "executable_statements": 0,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": null,
+        "binary_decisions": null,
+        "npath_node_simple": null,
+        "relative_logical_complexity": null,
+        "cc_risk_band_p1": null,
+        "fanin_resolved": 0,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": null,
+        "ic_resolved_exceeds_10": null,
+        "rci": null
+      },
+      "cfg_unavailable_reason": "declaration_without_body"
+    },
+    {
+      "id": "java:demo.Base.getValue@Example.java:9:101",
+      "qname": "demo.Base.getValue",
+      "name": "getValue",
+      "owner": "java:demo.Base@Example.java:7",
+      "path": "Example.java",
+      "language": "java",
+      "module": "demo",
+      "lexical_parent": null,
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "receiver_name": "this",
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "calls": [],
+      "field_accesses": [
+        "value"
+      ],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 9,
+      "end_line": 9,
+      "metrics": {
+        "total_lines": 1,
+        "blank_lines": 0,
+        "loc": 1,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 1,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 3,
+        "distinct_operands": 2,
+        "total_operators": 3,
+        "total_operands": 2,
+        "halstead_length": 5,
+        "halstead_vocabulary": 5,
+        "halstead_volume": 11.60964047443681,
+        "statements": 1,
+        "declarative_statements": 0,
+        "executable_statements": 1,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 1,
+        "cfg_edges": 2,
+        "cfg_nodes": 3,
+        "cfg_components": 1,
+        "binary_decisions": 0,
+        "npath_node_simple": 1,
+        "npath_details": {
+          "value": 1,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.0,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 2,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 1.4771212547196624,
+        "ic_resolved_exceeds_10": false,
+        "rci": 1.0,
+        "rci_exceeds_rcim": false
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "return",
+          "2": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "2",
+            "1",
+            "next"
+          ]
+        ],
+        "entry": "2",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "java:demo.Example.<init>@Example.java:14:220",
+      "qname": "demo.Example.<init>",
+      "name": "<init>",
+      "owner": "java:demo.Example@Example.java:12",
+      "path": "Example.java",
+      "language": "java",
+      "module": "demo",
+      "lexical_parent": null,
+      "visibility": "public",
+      "static": false,
+      "constructor": true,
+      "receiver_name": "this",
+      "params": [
+        {
+          "name": "peer",
+          "type": "Base"
+        }
+      ],
+      "arity_min": 1,
+      "arity_max": 1,
+      "calls": [],
+      "field_accesses": [
+        "peer"
+      ],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 14,
+      "end_line": 14,
+      "metrics": {
+        "total_lines": 1,
+        "blank_lines": 0,
+        "loc": 1,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 1,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 3,
+        "distinct_operands": 3,
+        "total_operators": 3,
+        "total_operands": 5,
+        "halstead_length": 8,
+        "halstead_vocabulary": 6,
+        "halstead_volume": 20.67970000576925,
+        "statements": 1,
+        "declarative_statements": 0,
+        "executable_statements": 1,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 1,
+        "cfg_edges": 2,
+        "cfg_nodes": 3,
+        "cfg_components": 1,
+        "binary_decisions": 0,
+        "npath_node_simple": 1,
+        "npath_details": {
+          "value": 1,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.0,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 1.0,
+        "ic_resolved_exceeds_10": false,
+        "rci": null
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "basic",
+          "2": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "2",
+            "1",
+            "next"
+          ]
+        ],
+        "entry": "2",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "java:demo.Example.setValue@Example.java:15:272",
+      "qname": "demo.Example.setValue",
+      "name": "setValue",
+      "owner": "java:demo.Example@Example.java:12",
+      "path": "Example.java",
+      "language": "java",
+      "module": "demo",
+      "lexical_parent": null,
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "receiver_name": "this",
+      "params": [
+        {
+          "name": "x",
+          "type": "int"
+        }
+      ],
+      "arity_min": 1,
+      "arity_max": 1,
+      "calls": [],
+      "field_accesses": [],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 15,
+      "end_line": 21,
+      "metrics": {
+        "total_lines": 7,
+        "blank_lines": 0,
+        "loc": 7,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 7,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 10,
+        "distinct_operands": 5,
+        "total_operators": 12,
+        "total_operands": 10,
+        "halstead_length": 22,
+        "halstead_vocabulary": 15,
+        "halstead_volume": 85.95159310338741,
+        "statements": 3,
+        "declarative_statements": 0,
+        "executable_statements": 3,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 3,
+        "cfg_edges": 7,
+        "cfg_nodes": 6,
+        "cfg_components": 1,
+        "binary_decisions": 2,
+        "npath_node_simple": 3,
+        "npath_details": {
+          "value": 3,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.6666666666666666,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 3.0,
+        "ic_resolved_exceeds_10": false,
+        "rci": null
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "basic",
+          "2": "basic",
+          "3": "binary_decision",
+          "4": "binary_decision",
+          "5": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "2",
+            "0",
+            "next"
+          ],
+          [
+            "3",
+            "1",
+            "true"
+          ],
+          [
+            "3",
+            "2",
+            "false"
+          ],
+          [
+            "4",
+            "3",
+            "true"
+          ],
+          [
+            "4",
+            "2",
+            "false"
+          ],
+          [
+            "5",
+            "4",
+            "next"
+          ]
+        ],
+        "entry": "5",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "java:demo.Example.readPeer@Example.java:22:428",
+      "qname": "demo.Example.readPeer",
+      "name": "readPeer",
+      "owner": "java:demo.Example@Example.java:12",
+      "path": "Example.java",
+      "language": "java",
+      "module": "demo",
+      "lexical_parent": null,
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "receiver_name": "this",
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "calls": [
+        {
+          "name": "getValue",
+          "receiver": "peer",
+          "arity": 0,
+          "line": 22,
+          "in_handler": false,
+          "kind": "call"
+        }
+      ],
+      "field_accesses": [
+        "peer"
+      ],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 22,
+      "end_line": 22,
+      "metrics": {
+        "total_lines": 1,
+        "blank_lines": 0,
+        "loc": 1,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 1,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 3,
+        "distinct_operands": 3,
+        "total_operators": 3,
+        "total_operands": 3,
+        "halstead_length": 6,
+        "halstead_vocabulary": 6,
+        "halstead_volume": 15.509775004326936,
+        "statements": 1,
+        "declarative_statements": 0,
+        "executable_statements": 1,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 1,
+        "cfg_edges": 2,
+        "cfg_nodes": 3,
+        "cfg_components": 1,
+        "binary_decisions": 0,
+        "npath_node_simple": 1,
+        "npath_details": {
+          "value": 1,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.0,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 1,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 1.1505149978319906,
+        "ic_resolved_exceeds_10": false,
+        "rci": null
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "return",
+          "2": "entry"
+        },
+        "edges": [
+          [
+            "1",
+            "0",
+            "next"
+          ],
+          [
+            "2",
+            "1",
+            "next"
+          ]
+        ],
+        "entry": "2",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "java:demo.Example.choose@Example.java:23:482",
+      "qname": "demo.Example.choose",
+      "name": "choose",
+      "owner": "java:demo.Example@Example.java:12",
+      "path": "Example.java",
+      "language": "java",
+      "module": "demo",
+      "lexical_parent": null,
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "receiver_name": "this",
+      "params": [
+        {
+          "name": "x",
+          "type": "int"
+        }
+      ],
+      "arity_min": 1,
+      "arity_max": 1,
+      "calls": [],
+      "field_accesses": [],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 23,
+      "end_line": 29,
+      "metrics": {
+        "total_lines": 7,
+        "blank_lines": 0,
+        "loc": 7,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 7,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 6,
+        "distinct_operands": 7,
+        "total_operators": 10,
+        "total_operands": 8,
+        "halstead_length": 18,
+        "halstead_vocabulary": 13,
+        "halstead_volume": 66.60791492653966,
+        "statements": 7,
+        "declarative_statements": 0,
+        "executable_statements": 7,
+        "catch_handlers": 0,
+        "empty_catch_handlers": 0,
+        "cc": 3,
+        "cfg_edges": 7,
+        "cfg_nodes": 6,
+        "cfg_components": 1,
+        "binary_decisions": 0,
+        "npath_node_simple": 3,
+        "npath_details": {
+          "value": 3,
+          "exact": true,
+          "algorithm": "dag_dp"
+        },
+        "relative_logical_complexity": 0.0,
+        "cc_risk_band_p1": "low",
+        "fanin_resolved": 0,
+        "fanout_resolved": 0,
+        "unresolved_call_sites": 0,
+        "ic_resolved": 3.0,
+        "ic_resolved_exceeds_10": false,
+        "rci": null
+      },
+      "cfg": {
+        "nodes": {
+          "0": "exit",
+          "1": "switch",
+          "2": "return",
+          "3": "return",
+          "4": "return",
+          "5": "entry"
+        },
+        "edges": [
+          [
+            "2",
+            "0",
+            "next"
+          ],
+          [
+            "3",
+            "0",
+            "next"
+          ],
+          [
+            "4",
+            "0",
+            "next"
+          ],
+          [
+            "1",
+            "4",
+            "case_0_0"
+          ],
+          [
+            "1",
+            "3",
+            "case_1_0"
+          ],
+          [
+            "1",
+            "2",
+            "default_2"
+          ],
+          [
+            "5",
+            "1",
+            "next"
+          ]
+        ],
+        "entry": "5",
+        "exits": [
+          "0"
+        ]
+      },
+      "cfg_origin": "frontend_normal_flow"
+    },
+    {
+      "id": "java:demo.Example.unsupportedFlow@Example.java:30:643",
+      "qname": "demo.Example.unsupportedFlow",
+      "name": "unsupportedFlow",
+      "owner": "java:demo.Example@Example.java:12",
+      "path": "Example.java",
+      "language": "java",
+      "module": "demo",
+      "lexical_parent": null,
+      "visibility": "public",
+      "static": false,
+      "constructor": false,
+      "receiver_name": "this",
+      "params": [],
+      "arity_min": 0,
+      "arity_max": 0,
+      "calls": [
+        {
+          "name": "getValue",
+          "receiver": "peer",
+          "arity": 0,
+          "line": 31,
+          "in_handler": false,
+          "kind": "call"
+        }
+      ],
+      "field_accesses": [
+        "peer"
+      ],
+      "has_body": true,
+      "abstract": false,
+      "start_line": 30,
+      "end_line": 32,
+      "metrics": {
+        "total_lines": 3,
+        "blank_lines": 0,
+        "loc": 3,
+        "comment_lines": 0,
+        "comment_only_lines": 0,
+        "mixed_code_comment_lines": 0,
+        "lines_without_comment_only": 3,
+        "comment_to_code_ratio": 0.0,
+        "comment_percentage": 0.0,
+        "distinct_operators": 4,
+        "distinct_operands": 5,
+        "total_operators": 4,
+        "total_operands": 5,
+        "halstead_length": 9,
+        "halstead_vocabulary": 9,
+        "halstead_volume": 28.52932501298081,
+        "statements": 2,
+        "declarative_statements": 0,
+        "executable_statements": 2,
+        "catch_handlers": 1,
+        "empty_catch_handlers": 1,
+        "cc": null,
+        "binary_decisions": null,
+        "npath_node_simple": null,
+        "relative_logical_complexity": null,
+        "cc_risk_band_p1": null,
+        "fanin_resolved": 0,
+        "fanout_resolved": 1,
+        "unresolved_call_sites": 0,
+        "ic_resolved": null,
+        "ic_resolved_exceeds_10": null,
+        "rci": null
+      },
+      "cfg_unavailable_reason": "Java statement TRY"
+    }
+  ],
+  "call_graph": {
+    "resolved_edges": [
+      [
+        "java:demo.Example.readPeer@Example.java:22:428",
+        "java:demo.Base.getValue@Example.java:9:101"
+      ],
+      [
+        "java:demo.Example.unsupportedFlow@Example.java:30:643",
+        "java:demo.Base.getValue@Example.java:9:101"
+      ],
+      [
+        "python:example.Counter.set_value@10",
+        "python:example.Counter.get_value@7"
+      ],
+      [
+        "smali:Ldemo/SmaliExample;->ping()V@Example.smali",
+        "external-signature:Ljava/net/Example;->send()V"
+      ],
+      [
+        "smali:Ldemo/SmaliExample;->ping()V@Example.smali",
+        "smali:Ldemo/SmaliExample;->getValue()I@Example.smali"
+      ]
+    ],
+    "unresolved_calls": [],
+    "invocation_sites": [
+      {
+        "caller": "smali:Ldemo/SmaliExample;->ping()V@Example.smali",
+        "path": "Example.smali",
+        "name": "getValue",
+        "receiver": "demo.SmaliExample",
+        "arity": 0,
+        "line": 14,
+        "raw_target": "Ldemo/SmaliExample;->getValue()I",
+        "kind": "call",
+        "in_handler": false,
+        "resolved_target": "smali:Ldemo/SmaliExample;->getValue()I@Example.smali",
+        "api_target": "Ldemo/SmaliExample;->getValue()I"
+      },
+      {
+        "caller": "smali:Ldemo/SmaliExample;->ping()V@Example.smali",
+        "path": "Example.smali",
+        "name": "send",
+        "receiver": "java.net.Example",
+        "arity": 0,
+        "line": 17,
+        "raw_target": "Ljava/net/Example;->send()V",
+        "kind": "call",
+        "in_handler": false,
+        "resolved_target": "external-signature:Ljava/net/Example;->send()V",
+        "api_target": "Ljava/net/Example;->send()V"
+      },
+      {
+        "caller": "python:example.Counter.set_value@10",
+        "path": "example.py",
+        "name": "get_value",
+        "receiver": "self",
+        "arity": 0,
+        "line": 15,
+        "in_handler": false,
+        "kind": "call",
+        "resolved_target": "python:example.Counter.get_value@7",
+        "api_target": "example.Counter.get_value"
+      },
+      {
+        "caller": "java:demo.Example.readPeer@Example.java:22:428",
+        "path": "Example.java",
+        "name": "getValue",
+        "receiver": "peer",
+        "arity": 0,
+        "line": 22,
+        "in_handler": false,
+        "kind": "call",
+        "resolved_target": "java:demo.Base.getValue@Example.java:9:101",
+        "api_target": "demo.Base.getValue"
+      },
+      {
+        "caller": "java:demo.Example.unsupportedFlow@Example.java:30:643",
+        "path": "Example.java",
+        "name": "getValue",
+        "receiver": "peer",
+        "arity": 0,
+        "line": 31,
+        "in_handler": false,
+        "kind": "call",
+        "resolved_target": "java:demo.Base.getValue@Example.java:9:101",
+        "api_target": "demo.Base.getValue"
+      }
+    ],
+    "scope": "Named declarations in analyzed snapshot; syntactic resolution, not runtime dispatch",
+    "resolution_complete": true,
+    "scope_branch_policy": null
+  },
+  "api_usage": {
+    "counts": {
+      "network_op": 1,
+      "fileio_op": 0,
+      "sqlite_op": 0,
+      "start_activity": 0,
+      "start_service": 0,
+      "start_intent_for_result": null,
+      "start_activity_result": null,
+      "log": 0
+    },
+    "rules": {
+      "network_op": [
+        "java.net.*",
+        "Ljava/net/*"
+      ],
+      "sqlite_op": [
+        "android.database.sqlite.*",
+        "Landroid/database/sqlite/*"
+      ],
+      "fileio_op": [
+        "java.io.*",
+        "Ljava/io/*"
+      ],
+      "start_activity": [
+        "android.*.startActivity",
+        "Landroid/*;->startActivity(*)*"
+      ],
+      "start_service": [
+        "android.*.startService",
+        "Landroid/*;->startService(*)*"
+      ],
+      "log": [
+        "java.util.logging.*",
+        "android.util.Log.*",
+        "Landroid/util/Log;->*",
+        "Ljava/util/logging/*"
+      ]
+    },
+    "scope": "Matched static invocation sites, not dynamic execution counts",
+    "call_sites_with_qualified_targets": 5,
+    "call_sites_without_qualified_targets": 0,
+    "note": "Registry is user-supplied; the AndroMetric PDF does not publish its exact API mapping"
+  },
+  "warnings": [],
+  "unavailable_or_external_input_metrics": [
+    {
+      "metrics": [
+        "KNOT1",
+        "KNOT2"
+      ],
+      "reason": "No formal knot algorithm/ordering is defined in the supplied paper."
+    },
+    {
+      "metrics": [
+        "Adjusted Complexity",
+        "SCOPE graph reconstruction",
+        "NEW_1 graph extraction"
+      ],
+      "reason": "Scope membership and global/local parameter definitions are insufficient. Raw E_j and NEW_1 arithmetic are implemented for supplied inputs."
+    },
+    {
+      "metrics": [
+        "ev(g)",
+        "iv(g)",
+        "Halstead L",
+        "Halstead D",
+        "Halstead I",
+        "Halstead E",
+        "Halstead B",
+        "Halstead T",
+        "branchCount",
+        "potential volume",
+        "estimated program length"
+      ],
+      "reason": "Named or ambiguously labeled dataset fields; formulas/extractor specification are absent. B is NOT automatically treated as observed bug count."
+    },
+    {
+      "metrics": [
+        "PPIV",
+        "APD",
+        "AndroMetric unnamed columns"
+      ],
+      "reason": "Only names/representative columns are supplied; exact definitions/schema are not reconstructed."
+    },
+    {
+      "metrics": [
+        "FAIRness sub-principle scores",
+        "RSEMM best-practice score",
+        "community activity score",
+        "CI integration score",
+        "documentation coverage score",
+        "development history score",
+        "issue management score",
+        "licensing score",
+        "unit testing score",
+        "overall maturity band",
+        "citation velocity",
+        "h-index-style measure"
+      ],
+      "reason": "Scoring rules/thresholds/measurement windows are incomplete. No substitute Git heuristics are presented as these scores."
+    },
+    {
+      "metrics": [
+        "SR",
+        "SA",
+        "SE",
+        "Business Impact"
+      ],
+      "reason": "Vendor/business inputs must be supplied. Health and ROCR arithmetic are implemented."
+    },
+    {
+      "metrics": [
+        "AP from raw bounding boxes"
+      ],
+      "reason": "P5 does not specify matching/interpolation/confidence rules. Supply per-class AP at each IoU threshold."
+    },
+    {
+      "metrics": [
+        "ERV",
+        "UIS",
+        "Average Unit Size",
+        "NAC",
+        "NTI",
+        "INC",
+        "C3",
+        "NRCI"
+      ],
+      "reason": "Candidate names in P9, without sufficient operational definitions in its implementation table."
+    },
+    {
+      "metrics": [
+        "Original-tool LCOM for P1/P2/P6",
+        "Exact NASA locCodeAndComment"
+      ],
+      "reason": "Variants/extractor conventions unspecified; do not substitute a different metric silently."
+    }
+  ],
+  "auxiliary_metrics": {
+    "classification": {
+      "n": 4,
+      "accuracy": 0.75,
+      "cohens_kappa": 0.5,
+      "per_class": [
+        {
+          "label": 0,
+          "tp": 1,
+          "tn": 2,
+          "fp": 0,
+          "fn": 1,
+          "accuracy": 0.75,
+          "precision": 1.0,
+          "recall": 0.5,
+          "specificity": 1.0,
+          "f1": 0.6666666666666666,
+          "mcc": 0.5773502691896258
+        },
+        {
+          "label": 1,
+          "tp": 2,
+          "tn": 1,
+          "fp": 1,
+          "fn": 0,
+          "accuracy": 0.75,
+          "precision": 0.6666666666666666,
+          "recall": 1.0,
+          "specificity": 0.5,
+          "f1": 0.8,
+          "mcc": 0.5773502691896258
+        }
+      ],
+      "binary": {
+        "tp": 2,
+        "tn": 1,
+        "fp": 1,
+        "fn": 0,
+        "accuracy": 0.75,
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "specificity": 0.5,
+        "f1": 0.8,
+        "mcc": 0.5773502691896258,
+        "auc": 1.0,
+        "auc_tie_credit": 0.0,
+        "rmse": 0.324037034920393
+      }
+    },
+    "agreement": {
+      "percentage_agreement": 75.0,
+      "cohens_kappa": 0.5555555555555556,
+      "n": 4
+    },
+    "detection": {
+      "map_50": 0.9,
+      "map_50_95": 0.658,
+      "ap_thresholds_complete_and_same_classes": true,
+      "missing_iou_thresholds": [],
+      "input_requirement": "AP values from a separately configured detection evaluator"
+    },
+    "runtime": {
+      "latency_ms_per_image": 17.0,
+      "images": 2,
+      "gpu_memory_mb_samples": 2,
+      "gpu_memory_mb_mean": 43.0,
+      "gpu_memory_mb_max_observed": 44.0,
+      "gpu_memory_note": "Observed telemetry samples; not automatically a device-wide peak"
+    },
+    "test_execution": {
+      "test_execution_time_ms": 55.0,
+      "test_count": 4,
+      "suite_percentage_to_cover_all_faults": 50.0,
+      "tests_to_cover_all_faults": 2,
+      "time_to_cover_all_faults_ms": 30.0,
+      "fault_count": 2,
+      "uncovered_faults": [],
+      "fault_universe_source": "supplied"
+    },
+    "risk": [
+      {
+        "id": "navigation",
+        "software_health": 72.56666666666666,
+        "rocr": 2.511875999999999,
+        "highest_risk_file_count": 2
+      }
+    ],
+    "ai": {
+      "ai_ratio": 0.3333333333333333,
+      "ai_files": 1,
+      "human_files": 2,
+      "unclassified_files": 1
+    },
+    "citations": {
+      "citation_count": 2,
+      "note": "Deduplicate cross-provider work IDs before input"
+    },
+    "io_formats": {
+      "fomts": 2
+    },
+    "smells": {
+      "count": 1,
+      "by_type": {
+        "LongMethod": 1
+      }
+    },
+    "hybrid": {
+      "raw_complexities": [
+        2,
+        3
+      ],
+      "scope_sum_of_supplied_adjusted_complexities": 10.0,
+      "new1": 50.0,
+      "note": "Scope membership/adjusted values are supplied, not inferred from source"
+    }
+  },
+  "design_model_metrics": {
+    "class_count": 3,
+    "classes": [
+      {
+        "id": "I",
+        "name": "Readable",
+        "metrics": {
+          "attribute_count": 0,
+          "method_count": 1,
+          "public_methods": 1,
+          "setters": 0,
+          "getters": 1,
+          "interfaces_implemented": 0,
+          "noc_children": 0,
+          "num_descendants": 0,
+          "num_ancestors_known": 0,
+          "dit": 0,
+          "cld": 0,
+          "inherited_operations_known": 0,
+          "inherited_attributes_known": 0,
+          "direct_interface_clients": 1,
+          "indirect_interface_clients": 0,
+          "num_ass_el_ssc": 0,
+          "num_ass_el_sb": 0,
+          "num_ass_el_nsb": 0,
+          "ec_attr_known": 0,
+          "ic_attr_known": 0,
+          "ec_par_known": 0,
+          "ic_par_known": 0,
+          "assoc": 0,
+          "nesting": 0
+        },
+        "linkage": {
+          "unresolved_bases": [],
+          "unresolved_declared_types": [],
+          "hierarchy_complete_within_declared_scope": true,
+          "hierarchy_cycle_or_dependency_on_cycle": false
+        }
+      },
+      {
+        "id": "B",
+        "name": "Base",
+        "metrics": {
+          "attribute_count": 1,
+          "method_count": 1,
+          "public_methods": 1,
+          "setters": 0,
+          "getters": 1,
+          "interfaces_implemented": 0,
+          "noc_children": 1,
+          "num_descendants": 1,
+          "num_ancestors_known": 0,
+          "dit": 0,
+          "cld": 1,
+          "inherited_operations_known": 0,
+          "inherited_attributes_known": 0,
+          "direct_interface_clients": null,
+          "indirect_interface_clients": null,
+          "num_ass_el_ssc": 1,
+          "num_ass_el_sb": 1,
+          "num_ass_el_nsb": 0,
+          "ec_attr_known": 1,
+          "ic_attr_known": 0,
+          "ec_par_known": 1,
+          "ic_par_known": 0,
+          "assoc": 1,
+          "nesting": 0
+        },
+        "linkage": {
+          "unresolved_bases": [],
+          "unresolved_declared_types": [],
+          "hierarchy_complete_within_declared_scope": true,
+          "hierarchy_cycle_or_dependency_on_cycle": false
+        }
+      },
+      {
+        "id": "A",
+        "name": "Example",
+        "metrics": {
+          "attribute_count": 1,
+          "method_count": 2,
+          "public_methods": 2,
+          "setters": 1,
+          "getters": 1,
+          "interfaces_implemented": 1,
+          "noc_children": 0,
+          "num_descendants": 0,
+          "num_ancestors_known": 1,
+          "dit": 1,
+          "cld": 0,
+          "inherited_operations_known": 1,
+          "inherited_attributes_known": 1,
+          "direct_interface_clients": null,
+          "indirect_interface_clients": null,
+          "num_ass_el_ssc": 1,
+          "num_ass_el_sb": 1,
+          "num_ass_el_nsb": 0,
+          "ec_attr_known": 0,
+          "ic_attr_known": 1,
+          "ec_par_known": 0,
+          "ic_par_known": 1,
+          "assoc": 1,
+          "nesting": 0
+        },
+        "linkage": {
+          "unresolved_bases": [],
+          "unresolved_declared_types": [],
+          "hierarchy_complete_within_declared_scope": true,
+          "hierarchy_cycle_or_dependency_on_cycle": false
+        }
+      }
+    ],
+    "warnings": [],
+    "scope_branch_policy": "prefix_comparable",
+    "root_depth": 0,
+    "policy": "Explicit model relations only; return parameters excluded; inherited members deduplicated by signature/name"
+  }
+}

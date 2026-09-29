@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="model" name="Fixture">
+    <packagedElement xmi:type="uml:Package" xmi:id="pkg" name="demo">
+      <packagedElement xmi:type="uml:Interface" xmi:id="I" name="Readable">
+        <ownedOperation xmi:id="getI" name="getValue" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="B" name="Base">
+        <ownedAttribute xmi:id="value" name="value" visibility="protected" type="int"/>
+        <ownedOperation xmi:id="getB" name="getValue" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="A" name="Example">
+        <generalization xmi:id="g" general="B"/>
+        <interfaceRealization xmi:id="r" contract="I"/>
+        <ownedAttribute xmi:id="peer" name="peer" visibility="private" type="B"/>
+        <ownedOperation xmi:id="setA" name="setPeer" visibility="public">
+          <ownedParameter xmi:id="p" name="peer" type="B"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="hasA" name="hasPeer" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="assoc" name="AtoB">
+        <ownedEnd xmi:id="endA" type="A"/>
+        <ownedEnd xmi:id="endB" type="B"/>
+      </packagedElement>
+    </packagedElement>
+  </uml:Model>
+</xmi:XMI>

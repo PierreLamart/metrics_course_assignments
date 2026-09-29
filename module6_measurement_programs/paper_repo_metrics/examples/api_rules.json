@@ -1,0 +1,8 @@
+{
+  "network_op": ["java.net.*", "Ljava/net/*"],
+  "sqlite_op": ["android.database.sqlite.*", "Landroid/database/sqlite/*"],
+  "fileio_op": ["java.io.*", "Ljava/io/*"],
+  "start_activity": ["android.*.startActivity", "Landroid/*;->startActivity(*)*"],
+  "start_service": ["android.*.startService", "Landroid/*;->startService(*)*"],
+  "log": ["java.util.logging.*", "android.util.Log.*", "Landroid/util/Log;->*", "Ljava/util/logging/*"]
+}

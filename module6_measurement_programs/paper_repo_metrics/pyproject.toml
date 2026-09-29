@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-repo-metrics"
+version = "1.0.0"
+description = "Source-grounded software metrics for Git repositories, with explicit measurement policies"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+paper-repo-metrics = "paper_repo_metrics.cli:main"
+
+[tool.setuptools.package-data]
+paper_repo_metrics = ["JavaAstBridge.java", "catalog.json"]
+
+[tool.setuptools.packages.find]
+include = ["paper_repo_metrics*"]
+exclude = ["tests*", "examples*", "docs*"]
